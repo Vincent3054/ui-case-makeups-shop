@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁作業</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/jquery.easings.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.css" integrity="sha512-zDKgq9gDZL1N3buxzFPZjHwqDOFsgTyhR0aJtXLFTIjEFovumXMaVeF6iBUZ/Rc4Mb0IqRrhqAY+RY7OCUBo6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js" integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="css/hover.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+    <!-- custom demo style -->
+    <link rel="stylesheet" type="text/css" href="css/demo5.css" />
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body>
+    <div id="example">
+        <div id="page1" class="section" data-anchor="slide1">
+            <div id="head"></div>
+            <div id="headNav1" class="row" style="margin-top: 15px;">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a href="#slide1" class="nav-link hvr-grow" aria-current="page">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link" style="cursor: default;padding: 8px 0px;">|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#slide2" class="nav-link hvr-grow">作品精選</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link " style="cursor: default;padding: 8px 0px;">|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#slide3" class="nav-link hvr-grow">價目表</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div id="title">
+                <h3>預約LINE@135febgy<h3>
+            </div>
+            <img id="homeImg1" src="images/home2.png" width="250px" height="250px"> -->
+            <img id="homeImg2" src="images/imgmerge.png" width="45%" height="80%">
+            <div id="foot"></div>
+            <!-- <h1>A</h1> -->
+        </div>
+        <div id="page2" class="section" data-anchor="slide2">
+            <div id="head2"></div>
+            <div id="headNav2" class="row" style="margin-top: 15px;">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a href="#slide1" class="nav-link hvr-grow" aria-current="page">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link" style="cursor: default;padding: 8px 0px;">|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#slide2" class="nav-link hvr-grow">作品精選</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link " style="cursor: default;padding: 8px 0px;">|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#slide3" class="nav-link hvr-grow">價目表</a>
+                    </li>
+                </ul>
+            </div>
+            <img id="leftImg1" src="images/leftImg1.png" width="25%" height="100%">
+            <div id="page2Title-1" class="row">
+                <h2><b>作品精選</b></h2>
+            </div>
+            <div id="page2ImgList-1" class="card-group">
+                <div class="card hvr-grow" style="margin-right: 20px;">
+                    <img src="images/img1-1.jpg" class="card-img" width="200px" height="200px">
+                </div>
+                <div class="card hvr-grow" style="margin-right: 20px;">
+                    <img src="images/img1-2.jpg" class="card-img" width="200px" height="200px">
+                </div>
+                <div class="card hvr-grow" style="margin-right: 20px;">
+                    <img src="images/img1-3.jpg" class="card-img" width="200px" height="200px">
+                </div>
+                <div class="card hvr-grow" style="margin-right: 20px;">
+                    <img src="images/img1-4.jpg" class="card-img" width="200px" height="200px">
+                </div>
+                <div class="card hvr-grow" style="margin-right: 20px;">
+                    <img src="images/img1-5.jpg" class="card-img" width="200px" height="200px">
+                </div>
+            </div>
+            <div id="page2Title-2" class="row">
+                <h3><b>角蛋白</b></h3>
+            </div>
+            <div id="page2ImgList-2" class="card-group">
+                <div class="card hvr-grow" style="margin-right: 20px;">
+                    <img src="images/img2-1.jpg" class="card-img" width="200px" height="200px">
+                </div>
+                <div class="card hvr-grow" style="margin-right: 20px;">
+                    <img src="images/img2-2.jpg" class="card-img" width="200px" height="200px">
+                </div>
+                <div class="card hvr-grow" style="margin-right: 20px;">
+                    <img src="images/img2-3.jpg" class="card-img" width="200px" height="200px">
+                </div>
+                <div class="card hvr-grow" style="margin-right: 20px;">
+                    <img src="images/img2-4.jpg" class="card-img" width="200px" height="200px">
+                </div>
+            </div>
+            <div id="foot2"></div>
+        </div>
+        <div id="page3" class="section" data-anchor="slide3">
+            <div id="head3"></div>
+            <div id="headNav3" class="row" style="margin-top: 15px;">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a href="#slide1" class="nav-link hvr-grow" aria-current="page">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link" style="cursor: default;padding: 8px 0px;">|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#slide2" class="nav-link hvr-grow">作品精選</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link " style="cursor: default;padding: 8px 0px;">|</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#slide3" class="nav-link hvr-grow">價目表</a>
+                    </li>
+                </ul>
+            </div>
+            <img id="leftImg1" src="images/leftImg1.png" width="25%" height="100%">
+            <div id="page3Title-1" class="row">
+                <h1><b>價目表</b></h1>
+            </div>
+            <div id="page3TextList" class="row">
+                <div class="col page3TextListCol1">
+                    <p style="font-size: 24px;margin-bottom: 0px;">嫁接單根</p>
+                    <br>
+                    <p>自然款</p>
+                    <p>約120-180根 體驗價699 原價800</p>
+                    <p>接到滿 體驗價799 原價900</p>
+                    <br>
+                    <p>YY款</p>
+                    <p>180-200根 體驗價 799 原價900</p>
+                    <p>接到滿 體驗價899 原價 1000</p>
+                </div>
+                <div class="col ">
+                    <p style="font-size: 24px;margin-bottom: 0px;">睫毛翹睫術（角蛋白）</p>
+                    <br>
+                    <p>單堂799</p>
+                    <p>下睫毛現場評估 300</p>
+                    <p>增黑保養 200</p>
+                    <br>
+                    <p>包堂優惠-贈增黑服務一堂</p>
+                    <p>兩堂1399 （限五個月）</p>
+                    <p>三堂1799 （限七個月）</p>
+                </div>
+            </div>
+            <div id="page3ImgList" class="row">
+                <div class="main clearfix" style="padding: 0px;">
+                    <ul class="bb-custom-grid" id="bb-custom-grid">
+                        <li class="imgLeft1">
+                            <h3>Neonmob set</h3>
+                            <div class="bb-bookblock">
+                                <div class="bb-item"><a><img src="images/img1-4.jpg" width="225px" height="225px" /></a></div>
+                                <div class="bb-item"><a><img src="images/img1-3.jpg" width="225px" height="225px" /></a></div>
+                                <div class="bb-item"><a><img src="images/img1-2.jpg" width="225px" height="225px" /></a></div>
+                                <div class="bb-item"><a><img src="images/img1-1.jpg" width="225px" height="225px" /></a></div>
+                            </div>
+                            <nav>
+                                <span class="bb-current"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </nav>
+                        </li>
+                        <li class="imgLeft2">
+                            <h3>Neonmob set</h3>
+                            <div class="bb-bookblock">
+                                <div class="bb-item"><a><img src="images/img2-3.jpg" width="225px" height="225px" /></a></div>
+                                <div class="bb-item"><a><img src="images/img2-2.jpg" width="225px" height="225px" /></a></div>
+                                <div class="bb-item"><a><img src="images/img2-1.jpg" width="225px" height="225px" /></a></div>
+                                <div class="bb-item"><a><img src="images/img2-4.jpg" width="225px" height="225px" /></a></div>
+                            </div>
+                            <nav>
+                                <span class="bb-current"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </nav>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="foot3"></div>
+        </div>
+    </div>
+    <script>
+    $("#example").fullpage({
+        navigation: true, // 顯示導行列
+        navigationPosition: "right" // 導行列位置
+    });
+    new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', 'thirdPage']
+    });
+    </script>
+    <script src="js/jquerypp.custom.js"></script>
+    <script src="js/jquery.bookblock.js"></script>
+    <script type="text/javascript">
+    var Page = (function() {
+
+        var $grid = $('#bb-custom-grid');
+
+        return {
+            init: function() {
+                $grid.find('div.bb-bookblock').each(function(i) {
+
+                    var $bookBlock = $(this),
+                        $nav = $bookBlock.next().children('span'),
+                        bb = $bookBlock.bookblock({
+                            speed: 600,
+                            shadows: false
+                        });
+
+                    // add navigation events
+                    $nav.each(function(i) {
+                        $(this).on('click touchstart', function(event) {
+                            var $dot = $(this);
+                            $nav.removeClass('bb-current');
+                            $dot.addClass('bb-current');
+                            $bookBlock.bookblock('jump', i + 1);
+                            return false;
+                        });
+                    });
+
+                    // add swipe events
+                    $bookBlock.children().on({
+                        'swipeleft': function(event) {
+                            $bookBlock.bookblock('next');
+                            return false;
+                        },
+                        'swiperight': function(event) {
+                            $bookBlock.bookblock('prev');
+                            return false;
+                        }
+
+                    });
+
+                });
+            }
+        };
+
+    })();
+    </script>
+    <script>
+        Page.init();
+    </script>
+</body>
+
+</html>
+<style type="text/css">
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 微軟正黑體;
+}
+
+a:visited {
+    color: rgb(92, 94, 93);
+    text-decoration: none;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#headNav1 {
+    position: fixed;
+    top: 5%;
+    left: 10%;
+}
+
+#headNav2 {
+    position: fixed;
+    top: 105%;
+    left: 10%;
+}
+
+#headNav3 {
+    position: fixed;
+    top: 205%;
+    left: 10%;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(92, 94, 93);
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    color: rgb(92, 94, 93);
+}
+
+#homeImg1 {
+    position: fixed;
+    top: 15%;
+    left: 44%;
+    z-index: 900;
+
+}
+
+#homeImg2 {
+    position: fixed;
+    bottom: 5%;
+    left: 27.5%;
+    z-index: 1;
+}
+
+
+#head {
+    height: 50px;
+    background: rgb(92, 94, 93);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 998;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#foot {
+    height: 50px;
+    background: rgb(92, 94, 93);
+    position: fixed;
+    top: 95%;
+    width: 100%;
+    z-index: 999;
+}
+
+#head2 {
+    height: 50px;
+    background: rgb(92, 94, 93);
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    z-index: 998;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#foot2 {
+    height: 50px;
+    background: rgb(92, 94, 93);
+    position: fixed;
+    top: 195%;
+    width: 100%;
+    z-index: 999;
+}
+
+#head3 {
+    height: 50px;
+    background: rgb(92, 94, 93);
+    position: fixed;
+    top: 200%;
+    width: 100%;
+    z-index: 998;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#foot3 {
+    height: 50px;
+    background: rgb(92, 94, 93);
+    position: fixed;
+    top: 294.5%;
+    width: 100%;
+    z-index: 999;
+}
+
+#leftImg1 {
+    opacity: 0.7;
+    z-index: -999;
+}
+
+#page2Title-1 {
+    position: fixed;
+    top: 115%;
+    width: 100%;
+    text-align: center;
+}
+
+#page2Title-2 {
+    position: fixed;
+    top: 155%;
+    width: 100%;
+    text-align: center;
+}
+
+#page2ImgList-1 {
+    position: fixed;
+    top: 125%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#page2ImgList-2 {
+    position: fixed;
+    top: 162%;
+    left: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#page3Title-1 {
+    position: fixed;
+    top: 210%;
+    width: 100%;
+    text-align: center;
+}
+
+#page3TextList {
+    position: fixed;
+    top: 215%;
+    width: 100%;
+    text-align: center;
+}
+
+.page3TextListCol1 {
+    margin-left: 30%;
+}
+
+#page3ImgList {
+    position: fixed;
+    top: 255%;
+    width: 100%;
+    text-align: center;
+}
+
+.col p {
+    font-weight: bold;
+    text-align: left;
+    font-size: 18px;
+}
+
+.fp-watermark {
+    display: none;
+}
+
+.imgLeft1 {
+    left: 5%
+}
+
+.imgLeft2 {
+    left: 30%
+}
+
+@media (max-width: 1200px) {
+    #homeImg2 {
+        left: 20%;
+        width: 60%;
+    }
+
+    #page2ImgList-1 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #page2ImgList-2 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .imgLeft1 {
+        left: 18%
+    }
+
+    .imgLeft2 {
+        left: 25%
+    }
+}
+
+@media (max-width: 980px) {
+    #homeImg2 {
+        left: 15%;
+        width: 70%;
+    }
+
+    #title {
+        font-size: 10pt;
+    }
+
+    #page2ImgList-1 {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #page2ImgList-2 {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .imgLeft1 {
+        left: 20%
+    }
+
+    .imgLeft2 {
+        left: 20%
+    }
+}
+
+@media (max-width: 768px) {
+    #page2ImgList-1 {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #page2ImgList-2 {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .col p {
+        font-size: 18px;
+    }
+
+    .imgLeft1 {
+        left: 5%
+    }
+
+    .imgLeft2 {
+        left: 6%
+    }
+
+    .page3TextListCol1 {
+        margin-left: 8%;
+    }
+}
+</style>
